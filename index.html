@@ -3,7 +3,7 @@
 <head>
   <base target="_top">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Senternet Webapps Collections</title>
+  <title>Play Ludo - cansing</title>
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
@@ -16,52 +16,22 @@
       padding: 0; /* Remove default body padding */
     }
 
-    /* Loading Screen Styles */
-    #loading-screen {
-      position: fixed; /* Position fixed to cover the entire viewport */
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: #f3f4f6; /* Match body background */
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      z-index: 1000; /* Ensure it's on top */
-      opacity: 1; /* Start visible */
-      transition: opacity 0.5s ease-out; /* Smooth fade-out transition */
-    }
-
-    /* Main Iframe Styles */
-    #main-iframe {
-      width: 100vw; /* Take full viewport width */
-      height: 100vh; /* Take full viewport height */
-      border: none; /* No borders */
-    }
-
   
   </style>
 </head>
 <body>
   <!-- Loading Screen -->
-  <div id="loading-screen">
-    <h1 class="text-3xl sm:text-4xl font-bold text-center text-indigo-700 animate-pulse">Welcome to collections of SENTERNET</h1>
-    <p class="mt-4 text-lg text-gray-600">Loading Please wait...</p>
-  </div>
+ 
 
   <!-- Main Iframe for the specified link -->
   <iframe id="main-iframe" src="https://script.google.com/macros/s/AKfycbxFcxNKNPsto7Xx5ndrj33H5WqJnjasLbsqxFlMGIPrqUivLLZKwqtbrLOkieEVGuwm/exec" allowfullscreen></iframe>
 
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-      const loadingScreen = document.getElementById('loading-screen');
+    
       const mainIframe = document.getElementById('main-iframe');
 
-      // Ensure loading screen is visible initially
-      loadingScreen.style.opacity = '1';
-      loadingScreen.classList.remove('hidden');
-
+   
       // Hide loading screen when the iframe content has finished loading
       mainIframe.onload = function() {
         loadingScreen.style.opacity = '0'; // Start fade out
