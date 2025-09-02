@@ -3,33 +3,444 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🔥𓆩🅲🆂𓆪🔥Family - Annual ceremony Events - Cansing 2025</title>
+    <base target="_top">
+    <title>Senternet Cansing Family Web</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        /* Basic styling to ensure the iframe fills the entire viewport */
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            overflow: hidden; /* Hide scrollbars on the main page */
-            font-family: 'Inter', sans-serif; /* Apply Inter font */
+        body {
+            font-family: 'Poppins', 'Inter', sans-serif;
+            scroll-behavior: smooth;
         }
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none; /* Remove default iframe border */
-            display: block; /* Ensure iframe takes full space */
+
+        /* Webkit Scrollbar Styling */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #6366f1;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #4f46e5;
+        }
+
+        /* Navigation Button Active State */
+        .nav-button.active {
+            background: linear-gradient(to right, #6366f1, #8b5cf6);
+            color: white;
+            box-shadow: 0 4px 14px 0 rgba(99, 102, 241, 0.5);
+        }
+        
+        /* General Animation Keyframes */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .animate-fadeIn {
+            animation: fadeIn 0.6s ease-out forwards;
+        }
+        .animate-fadeInUp {
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+
+        /* Card Animation on Hover */
+        .website-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .website-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        /* Advertisement Popup Styling */
+        #ad-popup-overlay {
+            display: none; /* Initially hidden */
+        }
+        @keyframes scaleIn {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        .animate-scaleIn {
+            animation: scaleIn 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+        }
+
+        /* Glassmorphism effect for header and forms */
+        .glassmorphic {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
         }
     </style>
-    <!-- Google Fonts - Inter for a modern look -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <!-- The iframe element to embed the external website -->
-    <iframe src="https://script.google.com/macros/s/AKfycbznwh9kA6QBdSYcB-WDFV2Lbn4YhPgEGAWsnewCUDwOiUSfzgYg6psT_zvxKIX0Uk_sjA/exec" allowfullscreen>
-        <!-- Fallback content if the browser does not support iframes -->
-        <p>Your browser does not support iframes. No problem, You can access the site directly at:
-            <a href="https://script.google.com/macros/s/AKfycbznwh9kA6QBdSYcB-WDFV2Lbn4YhPgEGAWsnewCUDwOiUSfzgYg6psT_zvxKIX0Uk_sjA/exec">https://script.google.com/macros/s/AKfycbznwh9kA6QBdSYcB-WDFV2Lbn4YhPgEGAWsnewCUDwOiUSfzgYg6psT_zvxKIX0Uk_sjA/exec</a>
-        </p>
-    </iframe>
+<body class="bg-slate-50 min-h-screen flex flex-col items-center py-6 sm:py-8 px-4">
+
+    <!-- Main Application Container -->
+    <div class="w-full max-w-7xl mx-auto">
+
+        <!-- Header Section -->
+        <header class="w-full text-center mb-10 p-6 glassmorphic rounded-2xl shadow-lg animate-fadeInUp">
+            <img src="https://improxy.smpopular.com/tools/im/0/files/844424932338727/ceb1202a985148b22a7511b7373909f2.jpg" alt="Family Logo" class="mx-auto h-24 w-24 rounded-full shadow-md border-4 border-white">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-indigo-600 my-3 tracking-tight">
+                🔥𓆩🅲🆂𓆪🔥 Cansing Family
+            </h1>
+            <p class="text-lg text-slate-600 max-w-2xl mx-auto mb-4">
+                Discover, share, and engage with the best events and links from our vibrant community.
+            </p>
+            <marquee class="text-sm font-semibold text-orange-600 max-w-xl mx-auto bg-orange-100 p-2 rounded-md">
+                For Advertisement Opportunities, Contact <b>Eyekiller</b> on StarMaker (Room ID: 179698).
+            </marquee>
+
+            <!-- Navigation Buttons -->
+            <nav class="flex flex-wrap justify-center items-center gap-2 sm:gap-4 my-6 p-2 bg-white/70 backdrop-blur-sm rounded-full shadow-md max-w-md mx-auto border border-gray-200">
+                <button id="show-home-button" class="nav-button inline-flex items-center px-4 py-2 sm:px-5 sm:py-2.5 text-sm sm:text-base font-semibold rounded-full text-slate-700 hover:text-white hover:bg-indigo-500 focus:outline-none transition-all duration-300 transform hover:scale-105">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path></svg>
+                    All Sites
+                </button>
+                <button id="show-register-button" class="nav-button inline-flex items-center px-4 py-2 sm:px-5 sm:py-2.5 text-sm sm:text-base font-semibold rounded-full text-slate-700 hover:text-white hover:bg-indigo-500 focus:outline-none transition-all duration-300 transform hover:scale-105">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    Add Site
+                </button>
+                <button id="show-favorites-button" class="nav-button inline-flex items-center px-4 py-2 sm:px-5 sm:py-2.5 text-sm sm:text-base font-semibold rounded-full text-slate-700 hover:text-white hover:bg-indigo-500 focus:outline-none transition-all duration-300 transform hover:scale-105">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.324 1.118l1.519 4.674c.3.921-.755 1.688-1.539 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.784.57-1.838-.197-1.539-1.118l1.519-4.674a1 1 0 00-.324-1.118L2.28 9.092c-.783-.57-.381-1.81.588-1.81h4.915a1 1 0 00.95-.69l1.519-4.674z"></path></svg>
+                    Favorites
+                </button>
+            </nav>
+            <div id="user-id-display" class="text-sm text-slate-600 mt-4 flex justify-center items-center gap-2">
+                User ID: <span id="user-id-value" class="font-mono bg-indigo-100 text-indigo-800 py-1 px-3 rounded-md shadow-inner text-base" title="Your unique user ID"></span>
+                <button id="copy-user-id" class="text-indigo-600 hover:text-indigo-800 focus:outline-none font-medium transition-all duration-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+                </button>
+                <span id="copy-feedback" class="text-green-600 text-xs ml-2 hidden">Copied!</span>
+            </div>
+        </header>
+
+        <!-- Dynamic Content Sections -->
+        <main id="app-content">
+            <!-- Homepage Section -->
+            <section id="homepage-section" class="animate-fadeIn">
+                <div id="loading" class="text-center text-slate-600 text-lg py-12">
+                    <div class="flex items-center justify-center gap-3">
+                        <div class="w-8 h-8 border-4 border-indigo-500 border-t-transparent rounded-full animate-spin"></div>
+                        <p class="text-xl font-medium text-slate-700">Loading Community Sites...</p>
+                    </div>
+                </div>
+                <div id="websites-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"></div>
+                <div id="no-websites-message" class="hidden text-center text-slate-500 py-12">
+                    <p class="font-semibold text-2xl text-slate-700 mb-2">No Sites Found!</p>
+                    <p>Be the first one to share a link with the community.</p>
+                </div>
+            </section>
+
+            <!-- Favorites Section -->
+            <section id="favorites-section" class="hidden animate-fadeIn">
+                <div id="favorites-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"></div>
+                <div id="no-favorites-message" class="hidden text-center text-slate-500 py-12">
+                    <p class="font-semibold text-2xl text-slate-700 mb-2">Your Favorites is Empty!</p>
+                    <p>Click the star icon on any site to add it here.</p>
+                </div>
+            </section>
+
+            <!-- Registration Section -->
+            <section id="register-section" class="hidden animate-fadeIn">
+                <div class="max-w-lg mx-auto glassmorphic rounded-2xl shadow-xl p-8 space-y-6 animate-fadeInUp">
+                    <h2 class="text-3xl font-bold text-center text-indigo-600">Register a New Site</h2>
+                    <p class="text-center text-slate-600">Share a valuable link or event with the Cansing family!</p>
+                    <form id="website-form" class="space-y-6">
+                        <div>
+                            <label for="websiteName" class="block text-sm font-semibold text-slate-700 mb-1">Site/Event Name</label>
+                            <input type="text" id="websiteName" name="websiteName" required class="mt-1 block w-full px-4 py-3 bg-white/80 border border-slate-300 rounded-lg shadow-sm focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition" placeholder="e.g., Cansing Family Karaoke Night">
+                        </div>
+                        <div>
+                            <label for="websiteLink" class="block text-sm font-semibold text-slate-700 mb-1">Site Link (URL)</label>
+                            <input type="url" id="websiteLink" name="websiteLink" required class="mt-1 block w-full px-4 py-3 bg-white/80 border border-slate-300 rounded-lg shadow-sm focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition" placeholder="https://example.com">
+                        </div>
+                        <button type="submit" id="submit-button" class="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-lg font-medium text-white bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-indigo-600 hover:to-purple-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition transform hover:scale-105">
+                            Submit Website
+                        </button>
+                    </form>
+                    <div id="message-box" class="hidden p-4 rounded-lg font-medium" role="alert">
+                        <span id="message-text"></span>
+                        <button id="close-message" class="float-right font-bold text-lg -mt-1">&times;</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w-full bg-slate-800 text-white py-10 px-4 mt-16 rounded-t-lg shadow-inner">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 text-center md:text-left">
+            <div>
+                <h3 class="text-xl font-bold text-indigo-400">🔥𓆩🅲🆂𓆪🔥 Family Web App</h3>
+                <p class="text-slate-400 text-sm mt-2">
+                    Digitizing your manual tasks with SenterNet Technologies. Join our community to explore digital possibilities.
+                </p>
+                <div class="mt-4">
+                    <p class="text-slate-300 font-semibold">StarMaker Web Events Creator:</p>
+                    <p class="text-slate-400 text-sm">🔥𓆩🅲🆂𓆪🔥🖤𓊝🄴ує𓅋💜༗𝆺𝅥❤️𒁍 (SID: 13358325610)</p>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold text-slate-200 mb-3">Contact Us for Custom Websites</h4>
+                <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                    <a href="https://wa.me/9360291050?text=I'm%20interested%20in%20creating%20a%20website" class="text-slate-300 hover:text-white transition bg-slate-700 p-2 rounded-full" aria-label="WhatsApp"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a>
+                    <a href="mailto:senternettechnologies@gmail.com" class="text-slate-300 hover:text-white transition bg-slate-700 p-2 rounded-full" aria-label="Email"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></a>
+                    <a href="https://senternettechnologies.github.io/senternet.in/" class="text-slate-300 hover:text-white transition bg-slate-700 p-2 rounded-full" aria-label="Website"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg></a>
+                </div>
+            </div>
+        </div>
+        <div class="mt-8 pt-6 border-t border-slate-700 text-center text-slate-500 text-sm">
+            <p>&copy; 2025 SenterNet Technologies. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+<script>
+    /*****************************************************************
+     * Frontend JavaScript for Senternet Sites Web Application
+     *****************************************************************/
+
+    // --- Global State & DOM Elements ---
+    let userId = null;
+    const homepageSection = document.getElementById('homepage-section');
+    const registerSection = document.getElementById('register-section');
+    const favoritesSection = document.getElementById('favorites-section');
+    const navButtons = {
+        home: document.getElementById('show-home-button'),
+        register: document.getElementById('show-register-button'),
+        favorites: document.getElementById('show-favorites-button')
+    };
+    const loadingDiv = document.getElementById('loading');
+    const gridContainer = document.getElementById('websites-grid');
+    const noWebsitesMessage = document.getElementById('no-websites-message');
+    const favoritesGrid = document.getElementById('favorites-grid');
+    const noFavoritesMessage = document.getElementById('no-favorites-message');
+    const form = document.getElementById('website-form');
+    const submitButton = document.getElementById('submit-button');
+    const messageBox = document.getElementById('message-box');
+    const messageText = document.getElementById('message-text');
+    const closeMessageButton = document.getElementById('close-message');
+    const websiteNameInput = document.getElementById('websiteName');
+    const websiteLinkInput = document.getElementById('websiteLink');
+    const userIdDisplay = document.getElementById('user-id-value');
+    const copyUserIdButton = document.getElementById('copy-user-id');
+    const copyFeedback = document.getElementById('copy-feedback');
+
+    // --- User ID Management ---
+    function initializeUserId() {
+        userId = localStorage.getItem('senternetUserId');
+        if (!userId) {
+            userId = crypto.randomUUID();
+            localStorage.setItem('senternetUserId', userId);
+        }
+        userIdDisplay.textContent = userId;
+    }
+
+    // --- View/Navigation Management ---
+    function setActiveView(viewName) {
+        // Hide all sections first
+        [homepageSection, registerSection, favoritesSection].forEach(sec => sec.classList.add('hidden'));
+        Object.values(navButtons).forEach(btn => btn.classList.remove('active'));
+
+        // Show the active section and highlight the button
+        switch(viewName) {
+            case 'home':
+                homepageSection.classList.remove('hidden');
+                navButtons.home.classList.add('active');
+                fetchAndDisplayWebsites();
+                break;
+            case 'register':
+                registerSection.classList.remove('hidden');
+                navButtons.register.classList.add('active');
+                form.reset();
+                hideMessage();
+                break;
+            case 'favorites':
+                favoritesSection.classList.remove('hidden');
+                navButtons.favorites.classList.add('active');
+                fetchAndDisplayFavorites();
+                break;
+        }
+    }
+
+    // --- Data Fetching and Display ---
+    function handleBackendFailure(error) {
+        console.error('Error from Google Apps Script:', error);
+        loadingDiv.innerHTML = `<p class="text-red-500 font-semibold">Failed to load sites: ${error.message}</p>`;
+    }
+
+    function formatTime(totalSeconds) {
+        if (!totalSeconds || totalSeconds < 60) return `${Math.round(totalSeconds || 0)}s`;
+        const minutes = Math.floor(totalSeconds / 60);
+        const hours = Math.floor(minutes / 60);
+        if (hours > 0) return `${hours}h ${minutes % 60}m`;
+        return `${minutes}m`;
+    }
+    
+    function renderWebsiteCards(websites, favoritesSet, container, emptyMessageEl, showStats) {
+        loadingDiv.classList.add('hidden');
+        container.innerHTML = '';
+
+        if (websites && websites.length > 0) {
+            emptyMessageEl.classList.add('hidden');
+            websites.forEach((site, index) => {
+                const isFavorited = favoritesSet.has(site.link);
+                const card = document.createElement('div');
+                card.className = 'website-card relative bg-white/80 backdrop-blur-sm rounded-2xl shadow-md overflow-hidden flex flex-col justify-between border border-gray-200/80 animate-fadeInUp';
+                card.style.animationDelay = `${index * 50}ms`;
+
+                card.innerHTML = `
+                    <div class="p-5 flex flex-col justify-between flex-grow cursor-pointer" data-link="${site.link}">
+                        <div>
+                            <h3 class="text-lg font-bold text-slate-800 mb-2 break-words">${site.name}</h3>
+                            <p class="text-xs text-indigo-600 truncate mb-4 font-mono">${site.link}</p>
+                        </div>
+                        ${showStats ? `
+                        <div class="text-xs text-slate-500 mt-auto border-t border-slate-200 pt-3 flex justify-between items-center">
+                            <span><strong class="font-semibold">Views:</strong> ${site.views || 0}</span>
+                            <span><strong class="font-semibold">Time:</strong> ${formatTime(site.totalUsageTime)}</span>
+                        </div>
+                        ` : ''}
+                    </div>
+                    <button class="favorite-button absolute top-3 right-3 p-2 rounded-full transition-all duration-200 ${isFavorited ? 'bg-amber-400 text-white scale-110' : 'bg-white/50 text-slate-500 hover:bg-amber-300'} backdrop-blur-sm shadow">
+                        <svg class="w-5 h-5" fill="${isFavorited ? 'currentColor' : 'none'}" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.324 1.118l1.519 4.674c.3.921-.755 1.688-1.539 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.784.57-1.838-.197-1.539-1.118l1.519-4.674a1 1 0 00-.324-1.118L2.28 9.092c-.783-.57-.381-1.81.588-1.81h4.915a1 1 0 00.95-.69l1.519-4.674z"></path></svg>
+                    </button>
+                `;
+                
+                // Event Listeners
+                card.querySelector('.favorite-button').addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    toggleFavorite(site, e.currentTarget);
+                });
+                
+                card.querySelector('.cursor-pointer').addEventListener('click', (e) => {
+                    const link = e.currentTarget.dataset.link;
+                    google.script.run.logWebsiteView(link); // Log view count
+                    window.open(link, '_blank', 'noopener,noreferrer'); // Open in new tab
+                });
+
+                container.appendChild(card);
+            });
+        } else {
+            emptyMessageEl.classList.remove('hidden');
+        }
+    }
+
+    function fetchAndDisplayWebsites() {
+        loadingDiv.classList.remove('hidden');
+        gridContainer.innerHTML = '';
+        noWebsitesMessage.classList.add('hidden');
+        google.script.run
+            .withSuccessHandler(response => {
+                const favoritesSet = new Set(response.favorites.map(fav => fav.link));
+                renderWebsiteCards(response.websites, favoritesSet, gridContainer, noWebsitesMessage, true);
+            })
+            .withFailureHandler(handleBackendFailure)
+            .getWebsites(userId);
+    }
+
+    function fetchAndDisplayFavorites() {
+        loadingDiv.classList.remove('hidden');
+        favoritesGrid.innerHTML = '';
+        noFavoritesMessage.classList.add('hidden');
+        google.script.run
+            .withSuccessHandler(favoritesArray => {
+                const favoritesSet = new Set(favoritesArray.map(fav => fav.link));
+                renderWebsiteCards(favoritesArray, favoritesSet, favoritesGrid, noFavoritesMessage, false);
+            })
+            .withFailureHandler(handleBackendFailure)
+            .getFavorites(userId);
+    }
+    
+    // --- Favorites Logic ---
+    function toggleFavorite(website, button) {
+        const isCurrentlyFavorited = button.classList.contains('bg-amber-400');
+        const action = isCurrentlyFavorited ? 'removeFavorite' : 'addFavorite';
+
+        google.script.run
+            .withSuccessHandler(response => {
+                if (response.success) {
+                    const isNowFavorited = !isCurrentlyFavorited;
+                    button.classList.toggle('bg-amber-400', isNowFavorited);
+                    button.classList.toggle('text-white', isNowFavorited);
+                    button.classList.toggle('scale-110', isNowFavorited);
+                    button.querySelector('svg').setAttribute('fill', isNowFavorited ? 'currentColor' : 'none');
+                    showMessage(isNowFavorited ? 'Added to favorites!' : 'Removed from favorites!', true);
+                    if (!favoritesSection.classList.contains('hidden')) {
+                        fetchAndDisplayFavorites(); // Refresh favorites view if active
+                    }
+                } else {
+                    showMessage(response.message || 'Failed to update favorites.', false);
+                }
+            })
+            .withFailureHandler(err => showMessage(`Error: ${err.message}`, false))
+            [action](userId, website.name, website.link);
+    }
+
+    // --- Form Submission & UI Feedback ---
+    function showMessage(message, isSuccess) {
+        messageText.textContent = message;
+        messageBox.className = `p-4 rounded-lg font-medium ${isSuccess ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'}`;
+        setTimeout(hideMessage, 4000);
+    }
+
+    function hideMessage() {
+        messageBox.className = 'hidden';
+    }
+
+    form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        hideMessage();
+        submitButton.disabled = true;
+        submitButton.textContent = 'Submitting...';
+        google.script.run
+            .withSuccessHandler(response => {
+                if (response.success) {
+                    showMessage(response.message, true);
+                    form.reset();
+                    setActiveView('home'); // Switch to home view after successful submission
+                } else {
+                    showMessage(response.message, false);
+                }
+                submitButton.disabled = false;
+                submitButton.textContent = 'Submit Website';
+            })
+            .withFailureHandler(error => {
+                showMessage(`An unexpected error occurred: ${error.message}`, false);
+                submitButton.disabled = false;
+                submitButton.textContent = 'Submit Website';
+            })
+            .addWebsite(websiteNameInput.value, websiteLinkInput.value);
+    });
+
+    // --- Utility & Event Listeners ---
+    navButtons.home.addEventListener('click', () => setActiveView('home'));
+    navButtons.register.addEventListener('click', () => setActiveView('register'));
+    navButtons.favorites.addEventListener('click', () => setActiveView('favorites'));
+    closeMessageButton.addEventListener('click', hideMessage);
+    copyUserIdButton.addEventListener('click', () => {
+        navigator.clipboard.writeText(userId).then(() => {
+            copyFeedback.classList.remove('hidden');
+            setTimeout(() => copyFeedback.classList.add('hidden'), 2000);
+        });
+    });
+
+    // --- Initial Load ---
+    document.addEventListener('DOMContentLoaded', () => {
+        initializeUserId();
+        setActiveView('home'); // Set the initial view to homepage
+    });
+</script>
 </body>
 </html>
